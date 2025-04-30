@@ -1,0 +1,59 @@
+﻿/* Move down content because we have a fixed navbar that is 50px tall */
+body {
+ /*   padding-top: 50px;
+    padding-bottom: 20px;*/
+}
+
+/* Wrapping element */
+/* Set some basic padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Set widths on the form inputs since otherwise they're 100% wide */
+input,
+select,
+textarea {
+    max-width: 280px;
+}
+
+.row {
+    /* display: inline-block;*/
+    margin-left: 0px;
+    margin-top: 10px;
+}
+
+.errorMessage {
+    color: red;
+    padding-top: 10px;
+}
+
+.title {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-weight: bold;
+    font-size: 20px;
+    color: cornflowerblue;
+}
+
+.dataGrid td {
+    padding: 3px;
+    text-align: right;
+}
+
+.dataGrid tr:first-child td {
+    font-weight: bold;
+}
+
+/* Responsive: Portrait tablets and up */
+@media screen and (min-width: 768px) {
+    .jumbotron {
+        margin-top: 20px;
+    }
+
+    .body-content {
+        padding: 0;
+    }
+}
